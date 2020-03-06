@@ -1,0 +1,197 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+html, body {
+  background-color: var(--light-gray);
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  max-width: 100%;
+}
+
+header {
+  margin-top: 7em;
+}
+
+h1, h2 {
+  color: var(--dark-blue);
+  font-size: 1.5em;
+}
+
+h1 {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 600;
+  margin-top: 0;
+}
+
+main {
+  margin-bottom: 5em;
+}
+
+main p {
+  color: var(--grayish-blue);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  color: var(--dark-blue);
+  font-size: 1.5em;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 95%;
+  height: 80%;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 5px 8px var(--grayish-blue);
+  margin: 1em;
+  padding-bottom: 1.5em;
+}
+
+.card p {
+  color: var(--grayish-blue);
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0 1em 2.5em 1.5em;
+}
+
+.blue {
+  border-top: 5px solid var(--blue);
+}
+
+.red {
+  border-top: 5px solid var(--red);
+}
+
+.orange {
+  border-top: 5px solid var(--orange);
+}
+
+img {
+  float: right;
+  margin-right: 20px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  h1, h2 {
+    font-size: 2.1em;
+  }
+
+  main p {
+    width: 70%;
+    font-size: 1.1em;
+  }
+
+  .card {
+    width: 60%;
+    height: 60%;
+  }
+
+  .card p {
+    width: 70%;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1, h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    margin-left: 1.2em;
+  }
+
+  main p {
+    width: 70%;
+    font-size: 1.1em;
+  }
+
+  .card {
+    width: 60%;
+    height: 60%;
+  }
+
+  .card p {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1, h2 {
+    font-size: 3em;
+  }
+
+  main p {
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    width: 50%;
+    
+  }
+
+  .card-container {
+    display: block;
+    max-width: 100%;
+  }
+
+  .card {
+    width: 27%;
+    height: 27%;
+    padding-bottom: 7em;
+  }
+
+  .card p {
+    font-size: 1.1em;
+  }
+
+  .center {
+    width: 30%;
+    position: relative;
+    left: 35%;
+  }
+
+  .left {
+    position: absolute;
+    left: 6%;
+    top: 85%;
+  }
+
+  .right {
+    position: absolute;
+    right: 4%;
+    top: 85%;
+  }
+
+  footer {
+    margin-top: 5em;
+  }
+}
+
+
+
